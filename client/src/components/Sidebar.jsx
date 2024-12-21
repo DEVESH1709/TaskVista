@@ -52,7 +52,7 @@ const linkData = [
 
 const Sidebar = () => {
   const { user } = useSelector((state) => state.auth);
-
+  
   const dispatch = useDispatch();
   const location = useLocation();
 
@@ -74,7 +74,7 @@ const Sidebar = () => {
           path === el.link.split("/")[0] ? "bg-blue-700 text-neutral-100" : ""
         )}
       >
-        {el.icon}
+         {el.icon}
         <span className='hover:text-[#2564ed]'>{el.label}</span>
       </Link>
     );
@@ -85,7 +85,7 @@ const Sidebar = () => {
         <p className='bg-blue-600 p-2 rounded-full'>
           <MdOutlineAddTask className='text-white text-2xl font-black' />
         </p>
-        <span className='text-2xl font-bold text-black'>TaskMe</span>
+        <span className='text-2xl font-bold text-black'>Task Vista</span>
       </h1>
 
       <div className='flex-1 flex flex-col gap-y-5 py-8'>
