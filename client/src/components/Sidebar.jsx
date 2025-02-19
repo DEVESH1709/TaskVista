@@ -87,7 +87,7 @@ const Sidebar = () => {
         </p>
         <span className='text-2xl font-bold text-black'>Task Vista</span>
       </h1>
-
+      
       <div className='flex-1 flex flex-col gap-y-5 py-8'>
         {sidebarLinks.map((link) => (
           <NavLink el={link} key={link.label} />
